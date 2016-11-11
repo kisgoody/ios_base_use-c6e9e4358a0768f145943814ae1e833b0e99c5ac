@@ -34,7 +34,10 @@ class JsonViewController: UIViewController {
     }
 
     @IBAction func clickParserJSON(sender: AnyObject) {
-        if data != nil {self.parserJson(data!)}
+        let ss = josn.text as String!
+//        print("ss:\(ss)")
+        let dd = ss.dataUsingEncoding(NSUTF8StringEncoding)
+        if dd != nil {self.parserJson(dd!)}
     }
     var data: NSData?
     func networkRequest(_url: String){
@@ -74,22 +77,15 @@ class JsonViewController: UIViewController {
     }
     
     func parserJson(data: NSData){
-        let obj =  try! NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
-        let array = obj["城市代码"] as! [[String: Any]]
-//        var str = "json: "
-        for json in array {
-            let str1 = String(json["省"])
-            print("\(str1)")
-//            str += str1
+        
+        let aray =  try! NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
+        let arrays = aray.objectForKey("城市代码") as! NSArray
+        var result = ""
+        for dic in arrays{
+            let pp = dic["省"] as! String
+            result += "\n省：\(pp)"
         }
-//        jsonParser.text = str as String;
-        
-//        let data: NSData = _str.dataUsingEncoding(NSUTF8StringEncoding)!
-//        let da: NSData = NSData(bytes: _str, length: _str.le)
-//        let jsonArr = try! NSJSONSerialization.jsonObject(with: data,
-//            options: NSJSONSerialization.ReadingOptions.mutableContainers) as! [[String: Any]]
-        
-//    NSJSONSerialization.JSONObjectWithData(data: NSData, options: NSJSONSerialization.ReadingOptions.mutableContainers)
+        jsonParser.text = result
         
     }
     
