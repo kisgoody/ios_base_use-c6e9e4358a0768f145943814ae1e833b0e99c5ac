@@ -16,6 +16,7 @@
 		5A4C1A611DC9CA8C00162CD9 /* ios_base_useUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C1A601DC9CA8C00162CD9 /* ios_base_useUITests.swift */; };
 		5A4C1A6F1DC9D23100162CD9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C1A6E1DC9D23100162CD9 /* TableViewController.swift */; };
 		5A5425D81DCC7168002AFD3D /* MyProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5425D71DCC7168002AFD3D /* MyProgressViewController.swift */; };
+		5A572EB31DD5586B00EDBA68 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A572EB21DD5586B00EDBA68 /* TabBarViewController.swift */; };
 		5A6D81C71DCB2A930051F3DC /* NavigationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D81C61DCB2A930051F3DC /* NavigationSecondViewController.swift */; };
 		5A8369961DCC0F2000A0A9CB /* AlertDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8369951DCC0F2000A0A9CB /* AlertDialogViewController.swift */; };
 		5A8369981DCC175500A0A9CB /* ValueSendFristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8369971DCC175500A0A9CB /* ValueSendFristViewController.swift */; };
@@ -61,6 +62,7 @@
 		5A4C1A621DC9CA8C00162CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A4C1A6E1DC9D23100162CD9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5A5425D71DCC7168002AFD3D /* MyProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgressViewController.swift; sourceTree = "<group>"; };
+		5A572EB21DD5586B00EDBA68 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5A6D81C61DCB2A930051F3DC /* NavigationSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationSecondViewController.swift; sourceTree = "<group>"; };
 		5A8369951DCC0F2000A0A9CB /* AlertDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialogViewController.swift; sourceTree = "<group>"; };
 		5A8369971DCC175500A0A9CB /* ValueSendFristViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueSendFristViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				5A8369971DCC175500A0A9CB /* ValueSendFristViewController.swift */,
 				5A8369991DCC176F00A0A9CB /* ValueSendSecondViewController.swift */,
 				5A1807E51DD021C30097D8FB /* ThreadViewController.swift */,
+				5A572EB21DD5586B00EDBA68 /* TabBarViewController.swift */,
 			);
 			name = iso_base_use;
 			path = ios_base_use;
@@ -305,6 +308,7 @@
 				5AC797981DD44B1600B0A183 /* JsonViewController.swift in Sources */,
 				5A1807E61DD021C30097D8FB /* ThreadViewController.swift in Sources */,
 				5A8369961DCC0F2000A0A9CB /* AlertDialogViewController.swift in Sources */,
+				5A572EB31DD5586B00EDBA68 /* TabBarViewController.swift in Sources */,
 				5A8369981DCC175500A0A9CB /* ValueSendFristViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
