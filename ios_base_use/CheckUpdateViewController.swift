@@ -1,5 +1,5 @@
 //
-//  TabBarViewController.swift
+//  CheckUpdateViewController.swift
 //  ios_base_use
 //
 //  Created by EDF on 16/11/11.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabBarViewController: UIViewController {
+class CheckUpdateViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,16 @@ class TabBarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func clickBack(sender: AnyObject) {
-        
+    @IBAction func backClick(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
+    
+    @IBAction func checkClick(sender: AnyObject) {
+        
+        _ = CheckUpdate(_view: self)
+    }
+   
+    
 
     /*
     // MARK: - Navigation

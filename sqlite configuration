@@ -1,0 +1,5 @@
+
+sqlite 配置：
+添加libsqlite3.0.tbd：bulid phases->Linked binary with libraries->点击+号添加
+配置BridgeHeader.h: 新建BridgeHeader.h文件 -> 添加：#import <sqlite3.h> -> 点击项目
+-> 点击PROJECT中项目名称 -> 点击All 和 Combined 搜索brid -> 选择Objective-c Bridging Header 双击输入BridgeHeader.h

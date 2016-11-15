@@ -131,7 +131,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YKP-Hi-3aR">
                                 <rect key="frame" x="0.0" y="294" width="320" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="multithread"/>
+                                <state key="normal" title="Multithread"/>
                                 <connections>
                                     <segue destination="xyk-xq-emj" kind="modal" id="8vJ-iq-e7C"/>
                                 </connections>
@@ -150,6 +150,22 @@
                                 <state key="normal" title="TabBarController"/>
                                 <connections>
                                     <segue destination="2ih-XJ-Ipo" kind="modal" id="vkT-pp-e1i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pqy-PM-KlG">
+                                <rect key="frame" x="0.0" y="408" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Checkupdate"/>
+                                <connections>
+                                    <segue destination="oSy-a3-bqc" kind="modal" id="ae7-6k-7fT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LmA-Wh-5YR">
+                                <rect key="frame" x="0.0" y="446" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SQLite"/>
+                                <connections>
+                                    <segue destination="VRb-09-mGk" kind="modal" id="kTY-s6-J39"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -176,7 +192,123 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Zr-yU-kP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="690"/>
+            <point key="canvasLocation" x="296" y="762"/>
+        </scene>
+        <!--Database View Controller-->
+        <scene sceneID="HIu-pf-IjB">
+            <objects>
+                <viewController id="VRb-09-mGk" customClass="DatabaseViewController" customModule="ios_base_use" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHq-L2-0Bz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rs5-LW-L5N">
+                                <rect key="frame" x="0.0" y="154" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="添加数据"/>
+                                <connections>
+                                    <action selector="addData:" destination="VRb-09-mGk" eventType="touchUpInside" id="VnZ-fh-nyx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zLi-tr-k9j">
+                                <rect key="frame" x="0.0" y="280" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="更新数据"/>
+                                <connections>
+                                    <action selector="updateData:" destination="VRb-09-mGk" eventType="touchUpInside" id="wX8-DT-dgi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C2L-Fb-PZC">
+                                <rect key="frame" x="0.0" y="330" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deleteData:" destination="VRb-09-mGk" eventType="touchUpInside" id="tsL-9a-eZb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pPD-VC-9ln">
+                                <rect key="frame" x="0.0" y="220" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="查询数据"/>
+                                <connections>
+                                    <action selector="queryData:" destination="VRb-09-mGk" eventType="touchUpInside" id="x6q-wU-Qq7"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="1Vd-eO-pL6">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="sqlite" id="ewJ-pU-3Ue">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="XoG-1s-nmN">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fkX-QR-USb">
+                                                <rect key="frame" x="16" y="7" width="40" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="backClick:" destination="VRb-09-mGk" eventType="touchUpInside" id="wOu-eb-qQX"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="35Z-ar-iIR">
+                                <rect key="frame" x="0.0" y="106" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="连接数据库并创建表"/>
+                                <connections>
+                                    <action selector="createDb:" destination="VRb-09-mGk" eventType="touchUpInside" id="6eg-cn-glU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLN-8R-Glh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-996" y="1577"/>
+        </scene>
+        <!--Check Update View Controller-->
+        <scene sceneID="7EI-jy-C8n">
+            <objects>
+                <viewController id="oSy-a3-bqc" customClass="CheckUpdateViewController" customModule="ios_base_use" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YhT-lb-ig3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gCl-59-E0C">
+                                <rect key="frame" x="130" y="114" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="版本检测"/>
+                                <connections>
+                                    <action selector="checkClick:" destination="oSy-a3-bqc" eventType="touchUpInside" id="idc-na-Rhl"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="zAr-TH-Zbh">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="jjQ-qB-gly">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Xkx-2I-2so">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="m06-yf-3Pt">
+                                                <rect key="frame" x="16" y="7" width="40" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="backClick:" destination="oSy-a3-bqc" eventType="touchUpInside" id="VC4-dA-Wh0"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wt4-1U-tl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-643" y="1577"/>
         </scene>
         <!--Alert Dialog View Controller-->
         <scene sceneID="3in-af-e1a">
@@ -336,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEk-hg-yvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="326"/>
+            <point key="canvasLocation" x="728" y="342"/>
         </scene>
         <!--Test_ValueSend-->
         <scene sceneID="NeI-g9-mYw">
@@ -386,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKG-e5-J0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153" y="954"/>
+            <point key="canvasLocation" x="1129" y="954"/>
         </scene>
         <!--Value Send Second View Controller-->
         <scene sceneID="gwm-h9-lwk">
@@ -452,7 +584,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WgV-Nc-bRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="954"/>
+            <point key="canvasLocation" x="728" y="954"/>
         </scene>
         <!--Navigation Second View Controller-->
         <scene sceneID="SLS-cE-27s">
@@ -475,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUB-Wi-Hbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1577" y="326"/>
+            <point key="canvasLocation" x="1123" y="342"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="5M5-ZG-ipx">
@@ -518,7 +650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hS6-Yl-Qfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="250" y="67"/>
+            <point key="canvasLocation" x="286" y="126"/>
         </scene>
         <!--page2-->
         <scene sceneID="hAw-J6-fRQ">
@@ -532,7 +664,7 @@
                                 <rect key="frame" x="132" y="204" width="49" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -542,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1I-ns-W76" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="-282"/>
+            <point key="canvasLocation" x="728" y="-286"/>
         </scene>
         <!--page3-->
         <scene sceneID="cdj-FN-WEB">
@@ -556,7 +688,7 @@
                                 <rect key="frame" x="126" y="264" width="49" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -566,12 +698,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBv-BY-cdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="287" y="-1061"/>
+            <point key="canvasLocation" x="385" y="-1205"/>
         </scene>
         <!--page1-->
         <scene sceneID="qMk-Nk-pKC">
             <objects>
-                <viewController id="wet-9T-t0e" sceneMemberID="viewController">
+                <viewController id="wet-9T-t0e" customClass="TabBarViewController" customModule="ios_base_use" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FTR-LU-Ano">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -580,9 +712,27 @@
                                 <rect key="frame" x="135" y="189" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" id="fc4-0S-Bhh">
+                                <rect key="frame" x="-2" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="JzW-vw-Kiu">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Bv2-1L-ppU">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DBd-eu-yDN">
+                                                <rect key="frame" x="16" y="7" width="40" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="clickBack:" destination="wet-9T-t0e" eventType="touchUpInside" id="bb5-tl-5CY"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -590,7 +740,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSs-ey-dPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="-911"/>
+            <point key="canvasLocation" x="728" y="-901"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fLe-rS-wA6">

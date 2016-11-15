@@ -8,14 +8,28 @@
 
 import UIKit
 
+
+var DEBUG: Bool = true
+
+func log(logMessage: String, obj: AnyObject, functionName: String = __FUNCTION__) {
+    if DEBUG {
+        //    var mname = NSStringFromClass(obj.classForCoder) + "." + functionName
+        let mname = "\(Mirror(reflecting:obj).subjectType).\(functionName)"
+        //    println("\(mname): \(logMessage)")
+        NSLog("\(mname): \(logMessage)")
+    }
+}
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
+   
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
         return true
     }
 
