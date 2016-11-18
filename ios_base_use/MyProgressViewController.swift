@@ -16,7 +16,6 @@ class MyProgressViewController: UIViewController {
         
         if flag {
             
-            
             timer?.fireDate = NSDate.distantFuture()//暂停
             btn.setTitle("run", forState: .Normal)
             print("stop", terminator: "")
@@ -25,7 +24,6 @@ class MyProgressViewController: UIViewController {
             if pro.progress == 1.0{//进度条清零
                 showPro.text = "0.0%"
                 pro.setProgress(0.0, animated: false)
-                
                 
             }
             timer?.fireDate = NSDate.distantPast()//开始

@@ -6,6 +6,7 @@
 //  Copyright © 2016年 EDF. All rights reserved.
 //
 #import <sqlite3.h>
+#import "MyAlertCenter.h"
 
 #ifndef BridgeHeader_h
 #define BridgeHeader_h
