@@ -72,6 +72,216 @@
             </objects>
             <point key="canvasLocation" x="-89" y="126"/>
         </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="sZ9-n9-nkR">
+            <objects>
+                <viewController id="yrB-8L-6lJ" customClass="AnimationViewController" customModule="ios_base_use" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hOK-pA-zhq"/>
+                        <viewControllerLayoutGuide type="bottom" id="SpW-IK-PXP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kTr-vT-baU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNi-F2-h1Q">
+                                <rect key="frame" x="68" y="80" width="184" height="184"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-jF-VMJ">
+                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
+                                <items>
+                                    <navigationItem title="Animation" id="Shr-e2-cqK">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Rea-Aa-rzZ">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KPG-lO-2ox">
+                                                <rect key="frame" x="16" y="7" width="40" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="backClick:" destination="yrB-8L-6lJ" eventType="touchUpInside" id="fcU-jm-yIt"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE7-Ed-FcQ">
+                                <rect key="frame" x="145" y="274" width="30" height="30"/>
+                                <state key="normal" title="旋转"/>
+                                <connections>
+                                    <action selector="animation:" destination="yrB-8L-6lJ" eventType="touchUpInside" id="iRe-Vx-4bS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJE-Au-D83">
+                                <rect key="frame" x="59" y="274" width="30" height="30"/>
+                                <state key="normal" title="透明"/>
+                                <connections>
+                                    <action selector="透明:" destination="yrB-8L-6lJ" eventType="touchUpInside" id="OEo-rS-NK8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLw-7f-ntD">
+                                <rect key="frame" x="8" y="274" width="30" height="30"/>
+                                <state key="normal" title="缩放"/>
+                                <connections>
+                                    <action selector="缩放:" destination="yrB-8L-6lJ" eventType="touchUpInside" id="riB-X1-fHS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nw2-hD-KoF">
+                                <rect key="frame" x="209" y="272" width="30" height="30"/>
+                                <state key="normal" title="移动"/>
+                                <connections>
+                                    <action selector="移动:" destination="yrB-8L-6lJ" eventType="touchUpInside" id="Ngr-kh-3wa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mE7-Ed-FcQ" firstAttribute="centerX" secondItem="kTr-vT-baU" secondAttribute="centerX" id="HSG-x2-5ox"/>
+                            <constraint firstItem="IJE-Au-D83" firstAttribute="leading" secondItem="CLw-7f-ntD" secondAttribute="trailing" constant="13" id="KFI-Px-GIP"/>
+                            <constraint firstItem="hNb-jF-VMJ" firstAttribute="top" secondItem="hOK-pA-zhq" secondAttribute="bottom" id="Lhr-p7-iAq"/>
+                            <constraint firstItem="mE7-Ed-FcQ" firstAttribute="leading" secondItem="IJE-Au-D83" secondAttribute="trailing" constant="15" id="RdA-2n-zNl"/>
+                            <constraint firstItem="nw2-hD-KoF" firstAttribute="leading" secondItem="mE7-Ed-FcQ" secondAttribute="trailing" constant="25" id="V6J-RN-aWm"/>
+                            <constraint firstItem="zNi-F2-h1Q" firstAttribute="centerX" secondItem="kTr-vT-baU" secondAttribute="centerX" id="c2N-IO-rX8"/>
+                            <constraint firstItem="hNb-jF-VMJ" firstAttribute="leading" secondItem="kTr-vT-baU" secondAttribute="leadingMargin" constant="-24" id="pr0-hb-XYT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hNb-jF-VMJ" secondAttribute="trailing" constant="-24" id="sM2-Oa-FLS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="zNi-F2-h1Q" id="QeW-jK-XRA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19d-Oc-uaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1985" y="1583"/>
+        </scene>
+        <!--Gesture View Controller-->
+        <scene sceneID="32t-e5-pXK">
+            <objects>
+                <viewController id="GKE-kz-jDK" customClass="GestureViewController" customModule="ios_base_use" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZCz-5K-BJk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ov3-PH-Mov"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zf6-kd-uto">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qun-M2-hri">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Gesture" id="nui-XW-OQE">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="18i-sb-QHc">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QRi-Fj-W71">
+                                                <rect key="frame" x="16" y="7" width="71" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="backClick:" destination="GKE-kz-jDK" eventType="touchUpInside" id="Tv8-w4-aDi"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJb-ib-N9x">
+                                <rect key="frame" x="73" y="78" width="175" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="长按拖动1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIV-mw-tRh">
+                                        <rect key="frame" x="45" y="54" width="76" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8225898452" green="0.38012973109999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVC-ti-cMG">
+                                <rect key="frame" x="73" y="250" width="175" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="长按拖动2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVi-vP-oD6">
+                                        <rect key="frame" x="48" y="54" width="78" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8225898452" green="0.38012973109999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qun-M2-hri" firstAttribute="leading" secondItem="Zf6-kd-uto" secondAttribute="leadingMargin" constant="-20" id="215-VO-pD2"/>
+                            <constraint firstItem="GVC-ti-cMG" firstAttribute="centerX" secondItem="Zf6-kd-uto" secondAttribute="centerX" id="FsJ-af-Z5g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qun-M2-hri" secondAttribute="trailing" constant="-20" id="IJi-bl-VSj"/>
+                            <constraint firstItem="cJb-ib-N9x" firstAttribute="centerX" secondItem="Zf6-kd-uto" secondAttribute="centerX" id="aaa-0z-L6b"/>
+                            <constraint firstItem="qun-M2-hri" firstAttribute="top" secondItem="ZCz-5K-BJk" secondAttribute="bottom" constant="1" id="lW5-NW-hBa"/>
+                            <constraint firstItem="GVC-ti-cMG" firstAttribute="top" secondItem="cJb-ib-N9x" secondAttribute="bottom" constant="44" id="qUW-6A-pMm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bc9-ul-tcg"/>
+                    <connections>
+                        <outlet property="cube" destination="cJb-ib-N9x" id="rxW-89-EgT"/>
+                        <outlet property="cube1" destination="GVC-ti-cMG" id="VNa-t0-YUv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5q-bH-1N1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1430" y="234"/>
+        </scene>
+        <!--Refresh View Controller-->
+        <scene sceneID="tq5-w5-yRQ">
+            <objects>
+                <tableViewController id="rLm-SN-dpZ" customClass="RefreshViewController" customModule="ios_base_use" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kje-Ea-7Xh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="28" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Y1i-Aj-5Vj" customClass="TableCell" customModule="ios_base_use" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y1i-Aj-5Vj" id="vnl-1i-6bS">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOY-hC-vYP">
+                                            <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn7-vi-kuS">
+                                            <rect key="frame" x="45" y="11" width="86" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1c-LX-8yn">
+                                            <rect key="frame" x="111" y="11" width="201" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="content" destination="Mn7-vi-kuS" id="4vr-cO-NTr"/>
+                                    <outlet property="date" destination="b1c-LX-8yn" id="jlq-ZJ-a5O"/>
+                                    <outlet property="pic" destination="XOY-hC-vYP" id="6BA-vj-Qty"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rLm-SN-dpZ" id="nt7-PC-LqE"/>
+                            <outlet property="delegate" destination="rLm-SN-dpZ" id="RGh-L7-4XA"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="listView" destination="Kje-Ea-7Xh" id="3ri-lz-nxD"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6k-sR-ccU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1430" y="912"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -84,109 +294,145 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5S-KO-gAW">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5S-KO-gAW">
+                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
                                 <items>
                                     <navigationItem title="swift demo" id="qcS-G5-dKh"/>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWI-uA-8Xo">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWI-uA-8Xo">
+                                <rect key="frame" x="-8" y="64" width="336" height="504"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEp-xP-3nz">
-                                        <rect key="frame" x="0.0" y="26" width="320" height="20"/>
-                                        <state key="normal" title="TableViewDemo">
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="dlA-Dd-6NC" kind="modal" identifier="tableview" id="kuo-NU-VPY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pc-Lw-KXt">
-                                        <rect key="frame" x="0.0" y="54" width="320" height="30"/>
-                                        <state key="normal" title="UINavigationControllerDemo"/>
-                                        <connections>
-                                            <segue destination="6cb-5J-q8o" kind="modal" id="7nW-f5-hDN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gaj-Wi-iiX">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="30"/>
-                                        <state key="normal" title="AlertDialog"/>
-                                        <connections>
-                                            <segue destination="xxB-ok-l4U" kind="modal" id="kQX-Ks-mWl"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btx-CW-7RA">
-                                        <rect key="frame" x="0.0" y="165" width="320" height="30"/>
-                                        <state key="normal" title="Progress"/>
-                                        <connections>
-                                            <segue destination="fqF-2u-AB3" kind="modal" id="0bu-2O-296"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKP-Hi-3aR">
-                                        <rect key="frame" x="0.0" y="211" width="320" height="30"/>
-                                        <state key="normal" title="Multithread"/>
-                                        <connections>
-                                            <segue destination="xyk-xq-emj" kind="modal" id="8vJ-iq-e7C"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PU-l6-q8j">
-                                        <rect key="frame" x="-8" y="130" width="320" height="30"/>
-                                        <state key="normal" title="ValueSend"/>
-                                        <connections>
-                                            <segue destination="3y3-tz-Mpj" kind="modal" id="skL-pM-swT"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr9-d1-qfm">
-                                        <rect key="frame" x="0.0" y="249" width="320" height="30"/>
-                                        <state key="normal" title="SwiftyJSON"/>
-                                        <connections>
-                                            <segue destination="dVU-lE-N8S" kind="modal" id="cu8-5h-CUf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOE-Ef-1is">
-                                        <rect key="frame" x="0.0" y="279" width="320" height="30"/>
-                                        <state key="normal" title="TabBarController"/>
-                                        <connections>
-                                            <segue destination="2ih-XJ-Ipo" kind="modal" id="vkT-pp-e1i"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqy-PM-KlG">
-                                        <rect key="frame" x="0.0" y="317" width="320" height="30"/>
-                                        <state key="normal" title="Checkupdate"/>
-                                        <connections>
-                                            <segue destination="oSy-a3-bqc" kind="modal" id="ae7-6k-7fT"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmA-Wh-5YR">
-                                        <rect key="frame" x="0.0" y="355" width="320" height="30"/>
-                                        <state key="normal" title="SQLite"/>
-                                        <connections>
-                                            <segue destination="VRb-09-mGk" kind="modal" id="kTY-s6-J39"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxL-41-eQ0">
-                                        <rect key="frame" x="0.0" y="393" width="320" height="30"/>
-                                        <state key="normal" title="文件存储，GCD and Toast"/>
-                                        <connections>
-                                            <segue destination="WUt-aN-rWe" kind="modal" id="TDi-kq-Tg3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYa-aK-Hi2">
-                                        <rect key="frame" x="0.0" y="431" width="320" height="30"/>
-                                        <state key="normal" title="NSNotificationCenter == java broadcast"/>
-                                        <connections>
-                                            <segue destination="6zv-o5-aQu" kind="modal" id="NyI-Mh-e0R"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QOA-aD-QWi">
+                                        <rect key="frame" x="27" y="0.0" width="282" height="590"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEp-xP-3nz">
+                                                <rect key="frame" x="0.0" y="0.0" width="282" height="30"/>
+                                                <state key="normal" title="TableViewDemo">
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="dlA-Dd-6NC" kind="modal" identifier="tableview" id="kuo-NU-VPY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pc-Lw-KXt">
+                                                <rect key="frame" x="0.0" y="40" width="282" height="30"/>
+                                                <state key="normal" title="UINavigationControllerDemo"/>
+                                                <connections>
+                                                    <segue destination="6cb-5J-q8o" kind="modal" id="7nW-f5-hDN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gaj-Wi-iiX">
+                                                <rect key="frame" x="0.0" y="80" width="282" height="30"/>
+                                                <state key="normal" title="AlertDialog"/>
+                                                <connections>
+                                                    <segue destination="xxB-ok-l4U" kind="modal" id="kQX-Ks-mWl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PU-l6-q8j">
+                                                <rect key="frame" x="0.0" y="120" width="282" height="30"/>
+                                                <state key="normal" title="ValueSend"/>
+                                                <connections>
+                                                    <segue destination="3y3-tz-Mpj" kind="modal" id="skL-pM-swT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btx-CW-7RA">
+                                                <rect key="frame" x="0.0" y="160" width="282" height="30"/>
+                                                <state key="normal" title="Progress"/>
+                                                <connections>
+                                                    <segue destination="fqF-2u-AB3" kind="modal" id="0bu-2O-296"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKP-Hi-3aR">
+                                                <rect key="frame" x="0.0" y="200" width="282" height="30"/>
+                                                <state key="normal" title="Multithread"/>
+                                                <connections>
+                                                    <segue destination="xyk-xq-emj" kind="modal" id="8vJ-iq-e7C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr9-d1-qfm">
+                                                <rect key="frame" x="0.0" y="240" width="282" height="30"/>
+                                                <state key="normal" title="SwiftyJSON"/>
+                                                <connections>
+                                                    <segue destination="dVU-lE-N8S" kind="modal" id="cu8-5h-CUf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOE-Ef-1is">
+                                                <rect key="frame" x="0.0" y="280" width="282" height="30"/>
+                                                <state key="normal" title="TabBarController"/>
+                                                <connections>
+                                                    <segue destination="2ih-XJ-Ipo" kind="modal" id="vkT-pp-e1i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqy-PM-KlG">
+                                                <rect key="frame" x="0.0" y="320" width="282" height="30"/>
+                                                <state key="normal" title="Checkupdate"/>
+                                                <connections>
+                                                    <segue destination="oSy-a3-bqc" kind="modal" id="ae7-6k-7fT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmA-Wh-5YR">
+                                                <rect key="frame" x="0.0" y="360" width="282" height="30"/>
+                                                <state key="normal" title="SQLite"/>
+                                                <connections>
+                                                    <segue destination="VRb-09-mGk" kind="modal" id="kTY-s6-J39"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxL-41-eQ0">
+                                                <rect key="frame" x="0.0" y="400" width="282" height="30"/>
+                                                <state key="normal" title="文件存储，GCD and Toast"/>
+                                                <connections>
+                                                    <segue destination="WUt-aN-rWe" kind="modal" id="TDi-kq-Tg3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYa-aK-Hi2">
+                                                <rect key="frame" x="0.0" y="440" width="282" height="30"/>
+                                                <state key="normal" title="NSNotificationCenter == java broadcast"/>
+                                                <connections>
+                                                    <segue destination="6zv-o5-aQu" kind="modal" id="NyI-Mh-e0R"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugY-kY-9pB">
+                                                <rect key="frame" x="0.0" y="480" width="282" height="30"/>
+                                                <state key="normal" title="animation"/>
+                                                <connections>
+                                                    <segue destination="yrB-8L-6lJ" kind="modal" id="US2-Ua-xr7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPU-hA-9E9">
+                                                <rect key="frame" x="0.0" y="520" width="282" height="30"/>
+                                                <state key="normal" title="下拉刷新"/>
+                                                <connections>
+                                                    <segue destination="rLm-SN-dpZ" kind="modal" id="nPG-wd-woN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUD-W2-sZx" userLabel="手势判断">
+                                                <rect key="frame" x="0.0" y="560" width="282" height="30"/>
+                                                <state key="normal" title="Gesture"/>
+                                                <connections>
+                                                    <segue destination="GKE-kz-jDK" kind="modal" id="SMO-Uc-v2P"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="QOA-aD-QWi" firstAttribute="top" secondItem="vWI-uA-8Xo" secondAttribute="top" id="Epf-Ea-CNS"/>
+                                    <constraint firstAttribute="trailing" secondItem="QOA-aD-QWi" secondAttribute="trailing" constant="28" id="LcL-4w-pCs"/>
+                                    <constraint firstAttribute="bottom" secondItem="QOA-aD-QWi" secondAttribute="bottom" id="k6d-rx-ebm"/>
+                                    <constraint firstItem="QOA-aD-QWi" firstAttribute="centerX" secondItem="vWI-uA-8Xo" secondAttribute="centerX" id="rgJ-cL-hX3"/>
+                                    <constraint firstItem="QOA-aD-QWi" firstAttribute="leading" secondItem="vWI-uA-8Xo" secondAttribute="leading" constant="27" id="zIn-QC-FKy"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.82258984521626355" green="0.38012973108688386" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vWI-uA-8Xo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="93u-ss-eiq"/>
+                            <constraint firstItem="ocM-lh-NEM" firstAttribute="top" secondItem="vWI-uA-8Xo" secondAttribute="bottom" id="9eb-w3-l2q"/>
                             <constraint firstItem="b5S-KO-gAW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="CAr-sR-enk"/>
+                            <constraint firstItem="vWI-uA-8Xo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="Df4-ks-sXJ"/>
                             <constraint firstItem="b5S-KO-gAW" firstAttribute="top" secondItem="18d-5N-TPZ" secondAttribute="bottom" id="HDA-GJ-ICz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vWI-uA-8Xo" secondAttribute="trailing" constant="-24" id="QWe-2K-3Gh"/>
+                            <constraint firstItem="vWI-uA-8Xo" firstAttribute="top" secondItem="b5S-KO-gAW" secondAttribute="bottom" id="stf-oi-Zxm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="b5S-KO-gAW" secondAttribute="trailing" constant="-20" id="xaM-za-0K8"/>
                         </constraints>
                     </view>
@@ -357,7 +603,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h15-2W-UYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1319" y="2265"/>
+            <point key="canvasLocation" x="-1267" y="2265"/>
         </scene>
         <!--Data Save In File View Controller-->
         <scene sceneID="ibw-1a-63u">
@@ -371,7 +617,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMm-v6-e0k">
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMm-v6-e0k">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="nzu-PA-mjt">
@@ -388,7 +634,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="请写下你此时此刻的心情" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m4e-Ds-1Zy">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="请写下你此时此刻的心情" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m4e-Ds-1Zy">
                                 <rect key="frame" x="40" y="82" width="240" height="128"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -415,6 +661,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m4e-Ds-1Zy" firstAttribute="top" secondItem="MMm-v6-e0k" secondAttribute="bottom" constant="18" id="RWG-lU-Ng1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MMm-v6-e0k" secondAttribute="trailing" constant="-20" id="bqX-Gp-uAc"/>
+                            <constraint firstItem="MMm-v6-e0k" firstAttribute="top" secondItem="g3q-DA-AWi" secondAttribute="bottom" id="wTc-a7-g9f"/>
+                            <constraint firstItem="MMm-v6-e0k" firstAttribute="leading" secondItem="WtQ-Io-jzm" secondAttribute="leadingMargin" constant="-20" id="wcN-f0-L1c"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="text_read" destination="T6F-O3-06E" id="2EM-9S-IMD"/>

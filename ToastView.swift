@@ -19,11 +19,14 @@ class ToastView : NSObject{
     func showLoadingView() {
         clear()
         let frame = CGRectMake(0, 0, 78, 78)
+        UIColor.colorSSkey()
+        
         
         let loadingContainerView = UIView()
         loadingContainerView.layer.cornerRadius = 12
         loadingContainerView.backgroundColor = UIColor(red:0, green:0, blue:0, alpha: 0.8)
-        
+        loadingContainerView.backgroundColor = colorSky
+          
         let indicatorWidthHeight :CGFloat = 36
         let loadingIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
         loadingIndicatorView.frame = CGRectMake(frame.width/2 - indicatorWidthHeight/2, frame.height/2 - indicatorWidthHeight/2, indicatorWidthHeight, indicatorWidthHeight)
