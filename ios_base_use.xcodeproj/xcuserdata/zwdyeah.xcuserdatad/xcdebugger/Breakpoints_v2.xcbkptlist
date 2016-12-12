@@ -22,31 +22,46 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ios_base_use.ProgressViewController.init (ios_base_use.ProgressViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; ios_base_use.ProgressViewController"
+                  symbolName = "ios_base_use.ProgressViewController.__deallocating_deinit"
                   moduleName = "ios_base_use"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zwdyeah/Downloads/ios_base_use-c6e9e4358a0768f145943814ae1e833b0e99c5ac/ios_base_use/ProgressViewController.swift"
-                  timestampString = "500523852.367278"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "57">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ios_base_use.ProgressViewController.init (ios_base_use.ProgressViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;ios_base_use.ProgressViewController&gt;"
-                  moduleName = "ios_base_use"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zwdyeah/Downloads/ios_base_use-c6e9e4358a0768f145943814ae1e833b0e99c5ac/ios_base_use/ProgressViewController.swift"
-                  timestampString = "500523852.367848"
+                  timestampString = "502616889.719102"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
                   offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ios_base_use.ProgressViewController.init (ios_base_use.ProgressViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; ios_base_use.ProgressViewController"
+                  moduleName = "ios_base_use"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zwdyeah/Downloads/ios_base_use-c6e9e4358a0768f145943814ae1e833b0e99c5ac/ios_base_use/ProgressViewController.swift"
+                  timestampString = "502616889.720068"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ios_base_use.ProgressViewController.init (ios_base_use.ProgressViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;ios_base_use.ProgressViewController&gt;"
+                  moduleName = "ios_base_use"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zwdyeah/Downloads/ios_base_use-c6e9e4358a0768f145943814ae1e833b0e99c5ac/ios_base_use/ProgressViewController.swift"
+                  timestampString = "502616889.720827"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>

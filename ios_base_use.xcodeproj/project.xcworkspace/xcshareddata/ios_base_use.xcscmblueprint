@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "66F4A45ECC0A1266599506697A234FFD59384A70",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3AE8ED2E684071AF4FB151FA51BF266B82FF45BD" : 0,
+    "66F4A45ECC0A1266599506697A234FFD59384A70" : 0,
+    "522C14DCE06F2D6ED0A1269C68EDD8D08CA81645" : 0,
+    "6D97B6C8D4F11EEB472892DB3A4E502620F305A6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "539088D4-74D9-404B-8263-417CF2853389",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3AE8ED2E684071AF4FB151FA51BF266B82FF45BD" : "ios_base_use-c6e9e4358a0768f145943814ae1e833b0e99c5ac\/SQLite.swift\/",
+    "66F4A45ECC0A1266599506697A234FFD59384A70" : "ios_base_use-c6e9e4358a0768f145943814ae1e833b0e99c5ac\/",
+    "522C14DCE06F2D6ED0A1269C68EDD8D08CA81645" : "..\/Applications\/CirrusLogic",
+    "6D97B6C8D4F11EEB472892DB3A4E502620F305A6" : "..\/work\/zyf\/iOSHeadPhone"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ios_base_use",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios_base_use.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stephencelis\/SQLite.swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3AE8ED2E684071AF4FB151FA51BF266B82FF45BD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kisgoody\/CirrusLogic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "522C14DCE06F2D6ED0A1269C68EDD8D08CA81645"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kisgoody\/ios_base_use-c6e9e4358a0768f145943814ae1e833b0e99c5ac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "66F4A45ECC0A1266599506697A234FFD59384A70"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kisgoody\/iOSHeadPhone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D97B6C8D4F11EEB472892DB3A4E502620F305A6"
+    }
+  ]
+}

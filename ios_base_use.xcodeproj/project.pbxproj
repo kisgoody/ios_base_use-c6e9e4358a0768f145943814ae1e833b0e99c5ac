@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A1807E61DD021C30097D8FB /* ThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1807E51DD021C30097D8FB /* ThreadViewController.swift */; };
+		5A1F55C61DF68D7300D8F883 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F55C51DF68D7200D8F883 /* Color.swift */; };
 		5A4C1A411DC9CA8C00162CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C1A401DC9CA8C00162CD9 /* AppDelegate.swift */; };
 		5A4C1A431DC9CA8C00162CD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C1A421DC9CA8C00162CD9 /* ViewController.swift */; };
 		5A4C1A481DC9CA8C00162CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4C1A471DC9CA8C00162CD9 /* Assets.xcassets */; };
@@ -17,10 +18,29 @@
 		5A4C1A6F1DC9D23100162CD9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C1A6E1DC9D23100162CD9 /* TableViewController.swift */; };
 		5A5425D81DCC7168002AFD3D /* MyProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5425D71DCC7168002AFD3D /* MyProgressViewController.swift */; };
 		5A572EB31DD5586B00EDBA68 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A572EB21DD5586B00EDBA68 /* TabBarViewController.swift */; };
+		5A572EB51DD56E1C00EDBA68 /* CheckUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A572EB41DD56E1B00EDBA68 /* CheckUpdateViewController.swift */; };
+		5A572EB71DD5713F00EDBA68 /* CheckUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A572EB61DD5713E00EDBA68 /* CheckUpdate.swift */; };
+		5A58E7221DE667A300C98781 /* YMLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A58E7211DE667A300C98781 /* YMLoadingView.swift */; };
+		5A5E85E61DE282D7008A0210 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5E85E51DE282D7008A0210 /* GestureViewController.swift */; };
+		5A64BDC41DD95D6D00155993 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A64BDC31DD95D6D00155993 /* libsqlite3.0.tbd */; };
+		5A64BDC61DD95D9100155993 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64BDC51DD95D9100155993 /* DataBaseManager.swift */; };
+		5A64BDC81DD9868600155993 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64BDC71DD9868600155993 /* User.swift */; };
+		5A64BDCA1DD9A4FF00155993 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64BDC91DD9A4FF00155993 /* DatabaseViewController.swift */; };
+		5A6511D31DFE33D000C59974 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6511D21DFE33D000C59974 /* TableCell.swift */; };
+		5A6511D51DFE3D4400C59974 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6511D41DFE3D4400C59974 /* RefreshViewController.swift */; };
+		5A6847841DDD51EA003CB703 /* Notification_Frist_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6847831DDD51E9003CB703 /* Notification_Frist_ViewController.swift */; };
+		5A6847861DDD5223003CB703 /* Notification_second_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6847851DDD5223003CB703 /* Notification_second_ViewController.swift */; };
 		5A6D81C71DCB2A930051F3DC /* NavigationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D81C61DCB2A930051F3DC /* NavigationSecondViewController.swift */; };
+		5A7CDB6E1DDAA1B600D84EB8 /* sqlite configuration in Resources */ = {isa = PBXBuildFile; fileRef = 5A7CDB6D1DDAA1B600D84EB8 /* sqlite configuration */; };
 		5A8369961DCC0F2000A0A9CB /* AlertDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8369951DCC0F2000A0A9CB /* AlertDialogViewController.swift */; };
 		5A8369981DCC175500A0A9CB /* ValueSendFristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8369971DCC175500A0A9CB /* ValueSendFristViewController.swift */; };
 		5A83699A1DCC176F00A0A9CB /* ValueSendSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8369991DCC176F00A0A9CB /* ValueSendSecondViewController.swift */; };
+		5A86046B1DDEA81800271EAF /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86046A1DDEA81800271EAF /* AnimationViewController.swift */; };
+		5A8DF0231DDC042D0065846E /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DF0221DDC042D0065846E /* ToastView.swift */; };
+		5A8DF0251DDC04BA0065846E /* AnimationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DF0241DDC04BA0065846E /* AnimationUtil.swift */; };
+		5A8DF0271DDC05790065846E /* DataSaveInFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DF0261DDC05790065846E /* DataSaveInFileViewController.swift */; };
+		5A8DF0291DDC0C020065846E /* MyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DF0281DDC0C020065846E /* MyToastView.swift */; };
+		5A8DF02C1DDC2E810065846E /* MyAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DF02B1DDC2E810065846E /* MyAlertCenter.m */; };
 		5A8E1C711DCAD77B00A81624 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E1C701DCAD77B00A81624 /* MyTableViewController.swift */; };
 		5A8E1C731DCAE3E000A81624 /* NavifationFristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E1C721DCAE3E000A81624 /* NavifationFristViewController.swift */; };
 		5AC4D5C41DCC325500A89863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC4D5C21DCC325500A89863 /* Main.storyboard */; };
@@ -48,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		5A1807E51DD021C30097D8FB /* ThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadViewController.swift; sourceTree = "<group>"; };
+		5A1F55C51DF68D7200D8F883 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5A4C1A3D1DC9CA8C00162CD9 /* ios_base_use.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_base_use.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4C1A401DC9CA8C00162CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A4C1A421DC9CA8C00162CD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,10 +84,31 @@
 		5A4C1A6E1DC9D23100162CD9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5A5425D71DCC7168002AFD3D /* MyProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgressViewController.swift; sourceTree = "<group>"; };
 		5A572EB21DD5586B00EDBA68 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5A572EB41DD56E1B00EDBA68 /* CheckUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckUpdateViewController.swift; sourceTree = "<group>"; };
+		5A572EB61DD5713E00EDBA68 /* CheckUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckUpdate.swift; path = "../../../Applications/CirrusLogic/CRD42L42-MFi/iOS Application/CRD42L42-MFi-Demo/CRD42L42-MFi-Demo/CheckUpdate.swift"; sourceTree = "<group>"; };
+		5A58E7211DE667A300C98781 /* YMLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YMLoadingView.swift; path = ../../work/zyf/iOSHeadPhone/iOSHeadPhone/YMLoadingView.swift; sourceTree = "<group>"; };
+		5A5E85E51DE282D7008A0210 /* GestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
+		5A64BDC21DD95D0500155993 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		5A64BDC31DD95D6D00155993 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5A64BDC51DD95D9100155993 /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		5A64BDC71DD9868600155993 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5A64BDC91DD9A4FF00155993 /* DatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
+		5A6511D21DFE33D000C59974 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		5A6511D41DFE3D4400C59974 /* RefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
+		5A6847831DDD51E9003CB703 /* Notification_Frist_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification_Frist_ViewController.swift; sourceTree = "<group>"; };
+		5A6847851DDD5223003CB703 /* Notification_second_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification_second_ViewController.swift; sourceTree = "<group>"; };
 		5A6D81C61DCB2A930051F3DC /* NavigationSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationSecondViewController.swift; sourceTree = "<group>"; };
+		5A7CDB6D1DDAA1B600D84EB8 /* sqlite configuration */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sqlite configuration"; sourceTree = "<group>"; };
 		5A8369951DCC0F2000A0A9CB /* AlertDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialogViewController.swift; sourceTree = "<group>"; };
 		5A8369971DCC175500A0A9CB /* ValueSendFristViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueSendFristViewController.swift; sourceTree = "<group>"; };
 		5A8369991DCC176F00A0A9CB /* ValueSendSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueSendSecondViewController.swift; sourceTree = "<group>"; };
+		5A86046A1DDEA81800271EAF /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		5A8DF0221DDC042D0065846E /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		5A8DF0241DDC04BA0065846E /* AnimationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationUtil.swift; sourceTree = "<group>"; };
+		5A8DF0261DDC05790065846E /* DataSaveInFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSaveInFileViewController.swift; sourceTree = "<group>"; };
+		5A8DF0281DDC0C020065846E /* MyToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyToastView.swift; sourceTree = "<group>"; };
+		5A8DF02A1DDC2E420065846E /* MyAlertCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAlertCenter.h; sourceTree = "<group>"; };
+		5A8DF02B1DDC2E810065846E /* MyAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlertCenter.m; sourceTree = "<group>"; };
 		5A8E1C701DCAD77B00A81624 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		5A8E1C721DCAE3E000A81624 /* NavifationFristViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavifationFristViewController.swift; sourceTree = "<group>"; };
 		5AC4D5C31DCC325500A89863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A64BDC41DD95D6D00155993 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +146,9 @@
 		5A4C1A341DC9CA8C00162CD9 = {
 			isa = PBXGroup;
 			children = (
+				5A8DF0211DDC04090065846E /* utile */,
+				5A64BDC31DD95D6D00155993 /* libsqlite3.0.tbd */,
+				5A64BDC11DD95CC300155993 /* database */,
 				5A4C1A3F1DC9CA8C00162CD9 /* iso_base_use */,
 				5A4C1A541DC9CA8C00162CD9 /* ios_base_useTests */,
 				5A4C1A5F1DC9CA8C00162CD9 /* ios_base_useUITests */,
@@ -123,12 +169,13 @@
 		5A4C1A3F1DC9CA8C00162CD9 /* iso_base_use */ = {
 			isa = PBXGroup;
 			children = (
+				5A572EB61DD5713E00EDBA68 /* CheckUpdate.swift */,
+				5A5425D71DCC7168002AFD3D /* MyProgressViewController.swift */,
 				5AC797941DD44B1600B0A183 /* JsonViewController.swift */,
 				5AC797951DD44B1600B0A183 /* MyRootViewController.swift */,
 				5AC797971DD44B1600B0A183 /* ProgressViewController.swift */,
 				5A4C1A401DC9CA8C00162CD9 /* AppDelegate.swift */,
 				5AC4D5C21DCC325500A89863 /* Main.storyboard */,
-				5A5425D71DCC7168002AFD3D /* MyProgressViewController.swift */,
 				5A4C1A421DC9CA8C00162CD9 /* ViewController.swift */,
 				5A4C1A471DC9CA8C00162CD9 /* Assets.xcassets */,
 				5A4C1A491DC9CA8C00162CD9 /* LaunchScreen.storyboard */,
@@ -142,6 +189,14 @@
 				5A8369991DCC176F00A0A9CB /* ValueSendSecondViewController.swift */,
 				5A1807E51DD021C30097D8FB /* ThreadViewController.swift */,
 				5A572EB21DD5586B00EDBA68 /* TabBarViewController.swift */,
+				5A572EB41DD56E1B00EDBA68 /* CheckUpdateViewController.swift */,
+				5A64BDC91DD9A4FF00155993 /* DatabaseViewController.swift */,
+				5A8DF0261DDC05790065846E /* DataSaveInFileViewController.swift */,
+				5A6847831DDD51E9003CB703 /* Notification_Frist_ViewController.swift */,
+				5A6847851DDD5223003CB703 /* Notification_second_ViewController.swift */,
+				5A86046A1DDEA81800271EAF /* AnimationViewController.swift */,
+				5A5E85E51DE282D7008A0210 /* GestureViewController.swift */,
+				5A6511D41DFE3D4400C59974 /* RefreshViewController.swift */,
 			);
 			name = iso_base_use;
 			path = ios_base_use;
@@ -163,6 +218,32 @@
 				5A4C1A621DC9CA8C00162CD9 /* Info.plist */,
 			);
 			path = ios_base_useUITests;
+			sourceTree = "<group>";
+		};
+		5A64BDC11DD95CC300155993 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				5A64BDC21DD95D0500155993 /* BridgeHeader.h */,
+				5A64BDC51DD95D9100155993 /* DataBaseManager.swift */,
+				5A64BDC71DD9868600155993 /* User.swift */,
+				5A7CDB6D1DDAA1B600D84EB8 /* sqlite configuration */,
+			);
+			name = database;
+			sourceTree = "<group>";
+		};
+		5A8DF0211DDC04090065846E /* utile */ = {
+			isa = PBXGroup;
+			children = (
+				5A58E7211DE667A300C98781 /* YMLoadingView.swift */,
+				5A8DF0221DDC042D0065846E /* ToastView.swift */,
+				5A8DF0241DDC04BA0065846E /* AnimationUtil.swift */,
+				5A8DF0281DDC0C020065846E /* MyToastView.swift */,
+				5A8DF02A1DDC2E420065846E /* MyAlertCenter.h */,
+				5A8DF02B1DDC2E810065846E /* MyAlertCenter.m */,
+				5A1F55C51DF68D7200D8F883 /* Color.swift */,
+				5A6511D21DFE33D000C59974 /* TableCell.swift */,
+			);
+			name = utile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +308,7 @@
 		5A4C1A351DC9CA8C00162CD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = EDF;
 				TargetAttributes = {
@@ -271,6 +353,7 @@
 				5AC4D5C41DCC325500A89863 /* Main.storyboard in Resources */,
 				5A4C1A4B1DC9CA8C00162CD9 /* LaunchScreen.storyboard in Resources */,
 				5A4C1A481DC9CA8C00162CD9 /* Assets.xcassets in Resources */,
+				5A7CDB6E1DDAA1B600D84EB8 /* sqlite configuration in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +379,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC7979B1DD44B1600B0A183 /* ProgressViewController.swift in Sources */,
+				5A8DF0231DDC042D0065846E /* ToastView.swift in Sources */,
 				5A4C1A431DC9CA8C00162CD9 /* ViewController.swift in Sources */,
+				5A6847861DDD5223003CB703 /* Notification_second_ViewController.swift in Sources */,
+				5A1F55C61DF68D7300D8F883 /* Color.swift in Sources */,
 				5AC797991DD44B1600B0A183 /* MyRootViewController.swift in Sources */,
+				5A8DF0251DDC04BA0065846E /* AnimationUtil.swift in Sources */,
 				5A8E1C731DCAE3E000A81624 /* NavifationFristViewController.swift in Sources */,
 				5A6D81C71DCB2A930051F3DC /* NavigationSecondViewController.swift in Sources */,
+				5A6847841DDD51EA003CB703 /* Notification_Frist_ViewController.swift in Sources */,
+				5A6511D51DFE3D4400C59974 /* RefreshViewController.swift in Sources */,
 				5A8E1C711DCAD77B00A81624 /* MyTableViewController.swift in Sources */,
 				5A4C1A6F1DC9D23100162CD9 /* TableViewController.swift in Sources */,
 				5A83699A1DCC176F00A0A9CB /* ValueSendSecondViewController.swift in Sources */,
 				5A4C1A411DC9CA8C00162CD9 /* AppDelegate.swift in Sources */,
 				5A5425D81DCC7168002AFD3D /* MyProgressViewController.swift in Sources */,
+				5A572EB51DD56E1C00EDBA68 /* CheckUpdateViewController.swift in Sources */,
 				5AC797981DD44B1600B0A183 /* JsonViewController.swift in Sources */,
 				5A1807E61DD021C30097D8FB /* ThreadViewController.swift in Sources */,
+				5A6511D31DFE33D000C59974 /* TableCell.swift in Sources */,
+				5A5E85E61DE282D7008A0210 /* GestureViewController.swift in Sources */,
+				5A572EB71DD5713F00EDBA68 /* CheckUpdate.swift in Sources */,
+				5A8DF0291DDC0C020065846E /* MyToastView.swift in Sources */,
 				5A8369961DCC0F2000A0A9CB /* AlertDialogViewController.swift in Sources */,
+				5A8DF02C1DDC2E810065846E /* MyAlertCenter.m in Sources */,
+				5A64BDC61DD95D9100155993 /* DataBaseManager.swift in Sources */,
 				5A572EB31DD5586B00EDBA68 /* TabBarViewController.swift in Sources */,
 				5A8369981DCC175500A0A9CB /* ValueSendFristViewController.swift in Sources */,
+				5A86046B1DDEA81800271EAF /* AnimationViewController.swift in Sources */,
+				5A8DF0271DDC05790065846E /* DataSaveInFileViewController.swift in Sources */,
+				5A64BDC81DD9868600155993 /* User.swift in Sources */,
+				5A58E7221DE667A300C98781 /* YMLoadingView.swift in Sources */,
+				5A64BDCA1DD9A4FF00155993 /* DatabaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,10 +552,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ios_base_use/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mbz.ios-base-use";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BridgeHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -462,10 +566,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ios_base_use/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mbz.ios-base-use";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BridgeHeader.h;
 			};
 			name = Release;
 		};
